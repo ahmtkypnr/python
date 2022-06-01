@@ -1,3 +1,4 @@
+import math
 def factorial(n):
     if(n==0):
         return 1
@@ -9,8 +10,18 @@ def function_1(k):
 
 
 def estimate_pi():
-    k=0
+    epsilon = 10**(-15)
+    k = -1
+    t = 0
     while True:
+        k = k + 1
+        t =t+function_1(k)
+        
+        if(abs(math.pi-(1/(t*(8**(1/2))/9801)))<epsilon):
+            return (1/(t*(8**(1/2))/9801))
+            break
+
+print(estimate_pi())
         
 
 
