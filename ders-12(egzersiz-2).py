@@ -2,7 +2,6 @@ fin = open("words.txt")
 def print_anagrams(word_list):
     d = dict()
     d2 = dict()
-    d3 = dict()
     l = []
     for line in word_list:
         word = line.strip()
