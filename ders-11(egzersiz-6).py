@@ -26,4 +26,3 @@ def find_homophone():
 
 print(find_homophone())
 
-#(2) OLANLARA DA BAK
